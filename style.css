@@ -270,6 +270,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(./static/setting.svg); }
+  .button--repair::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: #ff3e79;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./static/repair.svg); }
   .button--search::after {
     content: "";
     height: 40px;

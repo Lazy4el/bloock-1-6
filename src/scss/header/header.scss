@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px $vertical-indent-xs;
+    background-color: $header-bg;
+    border-bottom: 1px solid #D9FFF5;
+
+    &__contain {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        margin-right: 16px;
+    }
+    @media screen and (min-width: $screen-md) {
+        padding: 18px $vertical-indent-md;
+    }
+    @media screen and (min-width: $screen-md) {
+        padding: 18px $vertical-indent-xl;
+    }
+
+    
+    @media screen and (min-width: $screen-xxl) {
+        display: none;
+    }
+}

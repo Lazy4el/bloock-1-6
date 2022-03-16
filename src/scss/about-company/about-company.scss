@@ -1,0 +1,57 @@
+.about-company {
+    &__description {
+        padding: 0 $vertical-indent-xs;
+
+        @media screen and (min-width: $screen-md) {
+            padding: 0;
+            padding-right: 48px;
+        }
+    }
+    &__text {
+        max-height: 90px;
+        overflow: hidden;
+        font-size: $font-size--p;
+        line-height: 18px;   
+        letter-spacing: 0.2px;    
+        color: $font-color;
+
+        @media screen and (min-width: $screen-md) {
+            max-height: 160px;
+            line-height: 20px;
+        }
+    }
+    &--open{
+        max-height: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 500px;
+        display: block;
+        margin: 16px auto 24px auto;
+
+        @media screen and (min-width: $screen-md) {
+            width: 360px;
+            height: 208px;
+            border-radius: 6px;
+            margin-top: 0;
+        }
+        @media screen and (min-width: $screen-xl) {
+            width: 530px;
+            height: 305px;
+        }
+    }
+
+    @media screen and (min-width: $screen-md) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 $horizontal-indent-md 32px $horizontal-indent-md;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 $horizontal-indent-xl 32px $horizontal-indent-xl;
+
+    }
+}

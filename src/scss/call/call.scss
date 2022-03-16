@@ -1,0 +1,74 @@
+.call {
+    position: absolute;
+    opacity: 1;
+    width: 320px;
+    min-height: 670px;
+    right: 0;
+    top: 0;
+    height: auto;
+    z-index: 150;
+    transition: 0.5s all;
+    transform: translate(200%);
+    padding: 24px 16px 32px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    background-color: #ffffff;
+    &__button {
+        margin-left: auto;
+    }
+
+    &__close {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        margin: 16px 0;
+        font-family: $font-family;
+        font-size: $font-size--h2;
+        line-height: 32px;
+        font-weight: bold;
+        letter-spacing: -0.6px;
+        color: $font-color;
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 100%;
+            left: -16px;
+            position: absolute;
+            border: 2px solid #41F6D7;
+            border-radius: 0 4px 4px 0;
+            background-color: #41F6D7;
+        }
+    }
+    
+    @media screen and (min-width: $screen-md) {
+        min-height: 940px;
+        padding: 24px 24px 32px;
+        &__title {   
+            &::after {
+                left: -24px;
+            }
+        }
+    }
+
+    @media screen and (min-width: $screen-xxl) {
+        width: 440px;
+        padding: 32px;
+
+        &__title {   
+            &::after {
+                left: -32px;
+            }
+        }
+
+
+        &__close {
+            position: absolute;
+            left: -65px;
+            top: 40px;            
+        }
+    }
+}

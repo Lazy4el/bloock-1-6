@@ -1,0 +1,117 @@
+.price{
+    &__tag {
+        font-family: $font-family;
+        font-size: $font-size--p;
+        line-height: 16px;
+        color: #7E7E82;
+        opacity: 0.72;
+        margin-bottom: 4px;
+    }
+
+    &__descritpion {
+        font-family: $font-family;
+        font-size: $font-size--p;
+        line-height: 18px;        
+        letter-spacing: 0.2px;        
+        color: $font-color;
+
+        &--no-wrap {
+            white-space: nowrap;
+        }
+    }
+
+    &__time {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box {
+        width: 260px;
+        height: 200px;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        &--title {
+            display: none;
+            padding: 16px;
+            font-family: $font-family;
+            font-size: $font-size--p;
+            line-height: 16px;
+            color: #7E7E82;
+            mix-blend-mode: normal;
+            opacity: 0.72;
+            margin-top: 24px;
+        }
+    }
+
+    @media screen and (min-width: $screen-md) {
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            max-height: 100%;  
+            padding: 0 16px;
+            margin: 0 $horizontal-indent-md;
+            gap: 0;      
+            background: #fff;
+            border-radius: 6px;    
+            
+        }
+
+        &__slide {
+            width: 100%;
+            border-radius: none;
+            border-bottom: 1px solid #EAEAEA;
+        }
+        
+        &__tag {
+            display: none;
+            &--title {
+                display: block;
+            }
+        }
+
+        &__box {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background: none;
+            border: none;
+            padding:  16px 0;
+
+            &--title {
+                display: flex;
+                padding: 16px;
+                margin: 0 $vertical-indent-md;
+                margin-top: 32px;
+            }
+        }
+    
+        &__service {
+            width: 55%;
+        }
+
+        &__price {
+            width: 13%;    
+        }
+
+        &__time {
+            align-items: center;
+            width: 32%;
+        }
+    }
+
+    @media screen and (min-width: $screen-xl) {
+        &__wrap {
+            padding: 0 24px;
+            margin-left: $horizontal-indent-xl;
+            margin-right: $horizontal-indent-xl;
+        }
+        &--title {
+            margin: 0 $vertical-indent-md;
+        }
+    }
+}

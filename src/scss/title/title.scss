@@ -1,0 +1,22 @@
+.title {
+    padding: $vertical-indent-xs;
+    border-top: 1px solid #D9FFF5;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    
+    &__text {
+        font-family: $font-family;
+        font-size: $font-size;
+        line-height: 24px;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: $font-color--h3;
+    }
+    
+    @media screen and (min-width: $screen-md) {
+        padding: 16px  $horizontal-indent-md;
+    }
+    @media screen and (min-width: $screen-xl) {
+        padding: 16px  $horizontal-indent-xl;
+    }
+}

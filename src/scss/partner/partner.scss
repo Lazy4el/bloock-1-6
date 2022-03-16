@@ -1,0 +1,17 @@
+.partner {
+    @media screen and (min-width: $screen-md) {
+        &__read-more {
+            margin: $horizontal-indent-md $vertical-indent-md 32px $vertical-indent-md;
+        }
+
+        &--open {
+            max-height: 100%;
+        }
+    }
+    @media screen and (min-width: $screen-xl) {
+        &__read-more {
+            margin: 24px $horizontal-indent-xl 50px $horizontal-indent-xl;
+        }
+    }
+
+}

@@ -1,0 +1,46 @@
+.footer {
+    border-top: 1px solid #D9FFF5;;
+    padding: $vertical-indent-xs $horizontal-indent-xs;
+
+    &__box{
+        font-family: $font-family;
+        font-size: $font-size--p;
+        line-height: 16px;
+        text-align: center;
+        color: #7E7E82;
+        display: block;
+        padding-bottom: 16px;
+        text-decoration: none;
+        transition: .4s all;
+
+        &--middle:hover {
+            color: $font-color;
+            font-weight:  500;
+            
+        }
+        
+    }
+
+    @media screen and (min-width: $screen-md) {
+        display: flex;
+        padding: $vertical-indent-md $horizontal-indent-md;
+        padding-top: 32px;
+
+        &__box{
+            width: 33%;
+
+            &--left {
+                text-align: left;
+            }
+
+            &--right {
+                text-align: right;
+            }
+        }
+    }
+    @media screen and (min-width: $screen-md) {
+        padding: 20px $horizontal-indent-xl;
+        padding-top: 32px;
+        
+    }
+}

@@ -1,0 +1,48 @@
+.form {
+    &__input{
+        width: 100%;
+        font-family: $font-family;
+        font-size: $font-size;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        &--theme-grey {           
+            padding: 12px 16px;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;           
+            color: #b5b6bc;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__politics {
+        font-family: $font-family;
+        font-size: $font-size--p;
+        line-height: 16px;
+        color: #7E7E82;
+        margin-bottom: 16px;
+    }
+    &__link {
+        font-family: $font-family;
+        font-size: $font-size--p;
+        line-height: 16px;
+        text-decoration: none;
+        color: #ff3e79;
+    }
+    &__textarea {
+        height: 118px;
+        resize: none;
+
+        &--theme-grey {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            font-family: $font-family;
+            font-size: $font-size;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: #b5b6bc;
+            margin-bottom: 16px;
+        }
+    }
+}

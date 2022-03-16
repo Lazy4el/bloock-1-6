@@ -1,0 +1,119 @@
+.service {
+    padding: $horizontal-indent-xs $vertical-indent-xs;
+
+    &__title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: $font-family;
+        font-size: $font-size--h1;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+        color: $font-color;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 4px;
+            height: 100%;
+            left: -$vertical-indent-xs;
+            background-color: #41F6D7;
+            border-radius: 0 4px 4px 0;
+            position: absolute;
+
+            @media screen and (min-width: $screen-md) {
+                left: -$vertical-indent-md;
+            }
+            @media screen and (min-width: $screen-xl) {
+                left: -$vertical-indent-xl;
+            }
+        }
+    }
+
+    &__feedback {
+        display: none;
+    }
+
+    &__menu {
+        margin-top: $horizontal-indent-xs;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 24px;
+            top: 0;
+            right: 0;
+            background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        }
+
+        &-wrap {
+            overflow-x: scroll;
+            display: flex;
+
+            &::-webkit-scrollbar { 
+                display: none; 
+            }
+        }
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        padding: 8px 15px;
+        display: block;
+        text-decoration: none;
+        color: #7E7E82;
+        font-size: $font-size;
+        white-space: nowrap;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+
+        &--active {
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+            background-color: #fff;
+        }
+    }
+
+    @media screen and (min-width: $screen-md) {
+        padding: $horizontal-indent-md $vertical-indent-md;
+    }
+    @media screen and (min-width: $screen-xl) {
+        padding: $vertical-indent-xl $horizontal-indent-xl  10px $horizontal-indent-xl;
+
+        &__menu {
+            margin-top: 8px;
+            &::after {
+                display: none;
+            }
+            &-wrap {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        &__link {
+            padding: 8px 19px;
+        }
+    }
+    
+    @media screen and (min-width: $screen-xxl) {
+        padding-top: 42px;
+
+        &__feedback {
+            display: flex;
+        }
+
+        &__button {
+            margin-left: 32px;
+        }
+
+
+    }
+}

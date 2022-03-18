@@ -1,7 +1,4 @@
 import Swiper, { Pagination } from 'swiper'
-import 'swiper/swiper.scss'
-import 'swiper/components/pagination/pagination.scss'
-
 Swiper.use([Pagination])
 
 let swiper1 
@@ -93,18 +90,10 @@ function statusSwiper() {
 
 
 window.addEventListener('load', function () {
-
-
-    statusSwiper()
-
-
-    
+    statusSwiper()    
 });
 
 
 window.addEventListener('resize', () => {
-
     statusSwiper()
-
-
 })

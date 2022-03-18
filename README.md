@@ -13,12 +13,6 @@
 - [NVM/Windows](https://github.com/coreybutler/nvm-windows)
 
 ## Использование
-##### Клонировать репозиторий, удалить историю
-```
-git clone https://github.com/alex-karo/webpack-static-template block7
-cd block7
-rm -fr .git
-```
 #### Проверка версии ноды
 ```
 node -v
@@ -48,5 +42,3 @@ npm run build
 ```
 npm run deploy
 ```
-
-Основано на [этой статье](https://hackernoon.com/lets-start-with-webpack-4-91a0f1dba02e)
